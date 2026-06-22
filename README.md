@@ -31,8 +31,9 @@ SupportPage/
 └── README.md
 ```
 
-すべて相対リンクなので、ユーザーサイト（`https://ykawazura.github.io/`）でも
-プロジェクトサイト（`https://ykawazura.github.io/<repo>/`）でもそのまま動きます。
+すべて相対リンクで構成しています。このサイトはユーザーサイト
+`https://ykapp-dev.github.io/`（リポジトリ `ykapp-dev/ykapp-dev.github.io`）の
+ルートで配信されます。
 
 ## ローカル確認
 
@@ -44,35 +45,33 @@ python3 -m http.server 8000
 
 ## GitHub Pages で公開する手順
 
-1. GitHubで新しいリポジトリを作成（例: `app-support`）。
-2. この `SupportPage` の中身（`index.html` など）を **リポジトリ直下** に置いてpush。
+このリポジトリは `ykapp-dev/ykapp-dev.github.io`（ユーザーサイト）で、
+`.github/workflows/deploy.yml` により GitHub Actions で自動デプロイされます。
+
+1. 変更を `main` に push する。
 
    ```bash
-   cd SupportPage
-   git init
    git add .
-   git commit -m "Add app support site"
-   git branch -M main
-   git remote add origin https://github.com/ykawazura/app-support.git
-   git push -u origin main
+   git commit -m "Update support site"
+   git push origin main
    ```
 
-3. リポジトリの **Settings → Pages** で、Source を `Deploy from a branch`、
-   Branch を `main` / `/ (root)` に設定して保存。
-4. 数分後、`https://ykawazura.github.io/app-support/` で公開されます。
+2. 初回のみ、リポジトリの **Settings → Pages → Build and deployment → Source** を
+   **「GitHub Actions」** に設定する。
+3. 以後、`main` に push するたびに Actions が走り、数分後に公開されます。
 
-## App Store Connect に登録するURL（例）
+## App Store Connect に登録するURL
 
-公開URLが `https://ykawazura.github.io/app-support/` の場合：
+公開URLはルート配信です（`https://ykapp-dev.github.io/`）。
 
 | アプリ | サポートURL | プライバシーポリシーURL |
 |---|---|---|
-| おんぷ よみ れんしゅう | `…/app-support/doremi.html` | `…/app-support/privacy.html` |
-| おけいこ | `…/app-support/okeiko.html` | `…/app-support/privacy.html` |
-| できたてキッチン | `…/app-support/dekitate.html` | `…/app-support/privacy.html` |
-| Zero Scanner | `…/app-support/zeroscanner.html` | `…/app-support/privacy.html` |
+| おんぷ よみ れんしゅう | `https://ykapp-dev.github.io/doremi.html` | `https://ykapp-dev.github.io/privacy.html` |
+| おけいこ | `https://ykapp-dev.github.io/okeiko.html` | `https://ykapp-dev.github.io/privacy.html` |
+| できたてキッチン | `https://ykapp-dev.github.io/dekitate.html` | `https://ykapp-dev.github.io/privacy.html` |
+| Zero Scanner | `https://ykapp-dev.github.io/zeroscanner.html` | `https://ykapp-dev.github.io/privacy.html` |
 
-> トップ（`…/app-support/`）をサポートURLにしてもOKです。その場合は利用者が一覧から選びます。
+> トップ（`https://ykapp-dev.github.io/`）をサポートURLにしてもOKです。その場合は利用者が一覧から選びます。
 
 ## メンテナンス
 
