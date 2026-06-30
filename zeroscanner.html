@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" data-lang="ja">
+<html lang="ja" data-lang="ja" data-langs="ja en ko zh-Hans">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/i18n.js"></script>
 </head>
-<body data-title-ja="Zero Scanner — サポート" data-title-en="Zero Scanner — Support">
+<body data-title-ja="Zero Scanner — サポート" data-title-en="Zero Scanner — Support" data-title-ko="Zero Scanner — 지원" data-title-zh-Hans="Zero Scanner — 支持">
   <header class="site-header">
     <div class="bar">
       <a class="home-link" href="index.html">
         <span class="lang-ja">アプリ サポート</span>
         <span class="lang-en">App Support</span>
+        <span class="lang-ko">앱 지원</span>
+        <span class="lang-zh-Hans">应用支持</span>
       </a>
       <div class="lang-toggle" role="group" aria-label="Language">
         <button type="button" data-lang="ja">日本語</button>
         <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="ko">한국어</button>
+        <button type="button" data-lang="zh-Hans">简体中文</button>
       </div>
     </div>
   </header>
@@ -26,6 +30,8 @@
     <a class="back" href="index.html">
       <span class="lang-ja">← すべてのアプリ</span>
       <span class="lang-en">← All apps</span>
+      <span class="lang-ko">← 모든 앱</span>
+      <span class="lang-zh-Hans">← 所有应用</span>
     </a>
 
     <div class="app-head">
@@ -35,11 +41,13 @@
         <p class="sub">
           <span class="lang-ja">端末内で完結するドキュメントスキャナー</span>
           <span class="lang-en">A document scanner that keeps everything on your device</span>
+          <span class="lang-ko">모든 데이터를 기기 안에 보관하는 문서 스캐너</span>
+          <span class="lang-zh-Hans">将所有内容保留在设备上的文档扫描器</span>
         </p>
         <div class="badges">
-          <span class="badge lang-ja">完全オンデバイス</span><span class="badge lang-en">Fully on-device</span>
-          <span class="badge lang-ja">広告なし・透かしなし</span><span class="badge lang-en">No ads, no watermark</span>
-          <span class="badge lang-ja">買い切り（サブスクなし）</span><span class="badge lang-en">One-time purchase</span>
+          <span class="badge lang-ja">完全オンデバイス</span><span class="badge lang-en">Fully on-device</span><span class="badge lang-ko">완전 온디바이스</span><span class="badge lang-zh-Hans">完全在设备上处理</span>
+          <span class="badge lang-ja">広告なし・透かしなし</span><span class="badge lang-en">No ads, no watermark</span><span class="badge lang-ko">광고 없음・워터마크 없음</span><span class="badge lang-zh-Hans">无广告、无水印</span>
+          <span class="badge lang-ja">買い切り（サブスクなし）</span><span class="badge lang-en">One-time purchase</span><span class="badge lang-ko">일회성 구입</span><span class="badge lang-zh-Hans">一次性购买</span>
         </div>
       </div>
     </div>
@@ -47,60 +55,78 @@
     <h2>
       <span class="lang-ja">アプリについて</span>
       <span class="lang-en">About</span>
+      <span class="lang-ko">앱 소개</span>
+      <span class="lang-zh-Hans">关于应用</span>
     </h2>
     <p class="lang-ja">Zero Scanner は「あなたの書類を外に出さない」ことを最優先に作ったドキュメントスキャナーです。撮影・OCR・検索・PDF書き出しまで、すべて端末内で完結します。ネットワーク送信はゼロ、解析SDKなし、アカウント不要です。</p>
     <p class="lang-en">Zero Scanner is a document scanner built around one priority: your files never leave your phone. Scanning, OCR, search, and PDF export all happen on-device — with zero network transmission, no analytics SDKs, and no account.</p>
+    <p class="lang-ko">Zero Scanner는 "문서를 외부로 내보내지 않는 것"을 최우선으로 만든 문서 스캐너입니다. 촬영, OCR, 검색, PDF 내보내기까지 모두 기기 내에서 완료됩니다. 네트워크 전송은 없고, 분석 SDK도 없으며, 계정도 필요하지 않습니다.</p>
+    <p class="lang-zh-Hans">Zero Scanner 是一款以“让您的文档不离开手机”为首要原则打造的文档扫描器。拍摄、OCR、搜索和 PDF 导出全部在设备上完成；没有网络传输、没有分析 SDK，也不需要账户。</p>
 
     <h2>
       <span class="lang-ja">主な機能</span>
       <span class="lang-en">Features</span>
+      <span class="lang-ko">주요 기능</span>
+      <span class="lang-zh-Hans">主要功能</span>
     </h2>
     <ul class="feat">
-      <li><span class="lang-ja">書類のスキャン（自動エッジ検出・複数ページ撮影）— 無料・無制限・透かしなし</span><span class="lang-en">Scan documents (auto edge detection, multi-page) — free, unlimited, no watermark</span></li>
-      <li><span class="lang-ja">PDF / JPEG / PNG で書き出し・共有、フォルダ整理、ページの並べ替え</span><span class="lang-en">Export and share as PDF / JPEG / PNG; organize with folders; reorder pages</span></li>
-      <li><span class="lang-ja">OCR＆全文検索パック（買い切り）：日本語・英語のOCR、本文の全文検索</span><span class="lang-en">OCR &amp; Full-Text Search Pack (one-time): OCR for Japanese &amp; English, full-text search</span></li>
-      <li><span class="lang-ja">検索可能PDF（透明テキスト層つき）の書き出し、テキストの選択・コピー</span><span class="lang-en">Export searchable PDFs (invisible text layer); select and copy recognized text</span></li>
-      <li><span class="lang-ja">すべて端末内で処理。クラウドに預けません</span><span class="lang-en">Everything is processed on-device — nothing goes to the cloud</span></li>
+      <li><span class="lang-ja">書類のスキャン（自動エッジ検出・複数ページ撮影）— 無料・無制限・透かしなし</span><span class="lang-en">Scan documents (auto edge detection, multi-page) — free, unlimited, no watermark</span><span class="lang-ko">문서 스캔(자동 가장자리 감지, 여러 페이지 촬영) — 무료, 무제한, 워터마크 없음</span><span class="lang-zh-Hans">扫描文档（自动边缘检测、多页拍摄）— 免费、无限制、无水印</span></li>
+      <li><span class="lang-ja">PDF / JPEG / PNG で書き出し・共有、フォルダ整理、ページの並べ替え</span><span class="lang-en">Export and share as PDF / JPEG / PNG; organize with folders; reorder pages</span><span class="lang-ko">PDF / JPEG / PNG로 내보내기와 공유, 폴더 정리, 페이지 순서 변경</span><span class="lang-zh-Hans">导出并分享为 PDF / JPEG / PNG，使用文件夹整理，重新排列页面</span></li>
+      <li><span class="lang-ja">OCR＆全文検索パック（買い切り）：日本語・英語のOCR、本文の全文検索</span><span class="lang-en">OCR &amp; Full-Text Search Pack (one-time): OCR for Japanese &amp; English, full-text search</span><span class="lang-ko">OCR 및 전체 텍스트 검색 팩(일회성 구입): 일본어・영어 OCR, 본문 전체 텍스트 검색</span><span class="lang-zh-Hans">OCR 与全文搜索包（一次性购买）：日语和英语 OCR、正文全文搜索</span></li>
+      <li><span class="lang-ja">検索可能PDF（透明テキスト層つき）の書き出し、テキストの選択・コピー</span><span class="lang-en">Export searchable PDFs (invisible text layer); select and copy recognized text</span><span class="lang-ko">검색 가능한 PDF(투명 텍스트 레이어 포함) 내보내기, 인식된 텍스트 선택 및 복사</span><span class="lang-zh-Hans">导出可搜索 PDF（带透明文本层），选择并复制识别出的文本</span></li>
+      <li><span class="lang-ja">すべて端末内で処理。クラウドに預けません</span><span class="lang-en">Everything is processed on-device — nothing goes to the cloud</span><span class="lang-ko">모든 처리는 기기 내에서 이루어지며 클라우드로 보내지 않습니다</span><span class="lang-zh-Hans">所有内容都在设备上处理，不上传到云端</span></li>
     </ul>
 
     <h2>
       <span class="lang-ja">よくある質問</span>
       <span class="lang-en">FAQ</span>
+      <span class="lang-ko">자주 묻는 질문</span>
+      <span class="lang-zh-Hans">常见问题</span>
     </h2>
     <div class="card faq">
       <details>
-        <summary><span class="lang-ja">無料でどこまで使えますか？</span><span class="lang-en">What can I do for free?</span></summary>
+        <summary><span class="lang-ja">無料でどこまで使えますか？</span><span class="lang-en">What can I do for free?</span><span class="lang-ko">무료로 어디까지 사용할 수 있나요?</span><span class="lang-zh-Hans">免费版可以使用哪些功能？</span></summary>
         <div class="answer">
           <p class="lang-ja">スキャン、画像（PDF / JPEG / PNG）での書き出し・共有、フォルダ整理は無料・無制限で、透かしも入りません。</p>
           <p class="lang-en">Scanning, image export (PDF / JPEG / PNG), sharing, and folder organization are free, unlimited, and watermark-free.</p>
+          <p class="lang-ko">스캔, 이미지(PDF / JPEG / PNG) 내보내기와 공유, 폴더 정리는 무료로 제한 없이 사용할 수 있으며 워터마크도 없습니다.</p>
+          <p class="lang-zh-Hans">扫描、以图像形式（PDF / JPEG / PNG）导出和分享、文件夹整理均免费且无限制，也不会添加水印。</p>
         </div>
       </details>
       <details>
-        <summary><span class="lang-ja">「OCR＆全文検索パック」には何が含まれますか？</span><span class="lang-en">What's included in the OCR &amp; Full-Text Search Pack?</span></summary>
+        <summary><span class="lang-ja">「OCR＆全文検索パック」には何が含まれますか？</span><span class="lang-en">What's included in the OCR &amp; Full-Text Search Pack?</span><span class="lang-ko">"OCR 및 전체 텍스트 검색 팩"에는 무엇이 포함되나요?</span><span class="lang-zh-Hans">“OCR 与全文搜索包”包含哪些内容？</span></summary>
         <div class="answer">
           <p class="lang-ja">日本語・英語のOCR（文字認識）、書類本文の全文検索、検索可能PDF（透明テキスト層つき）の書き出し、認識テキストの選択・コピーが解放されます。</p>
           <p class="lang-en">It unlocks OCR for Japanese and English, full-text search across your documents, searchable PDF export (with an invisible text layer), and selecting/copying recognized text.</p>
+          <p class="lang-ko">일본어・영어 OCR(문자 인식), 문서 본문 전체 텍스트 검색, 검색 가능한 PDF(투명 텍스트 레이어 포함) 내보내기, 인식된 텍스트 선택 및 복사가 활성화됩니다.</p>
+          <p class="lang-zh-Hans">它会解锁日语和英语 OCR、文档正文全文搜索、可搜索 PDF（带透明文本层）导出，以及选择和复制识别文本。</p>
         </div>
       </details>
       <details>
-        <summary><span class="lang-ja">これはサブスクですか？</span><span class="lang-en">Is this a subscription?</span></summary>
+        <summary><span class="lang-ja">これはサブスクですか？</span><span class="lang-en">Is this a subscription?</span><span class="lang-ko">구독인가요?</span><span class="lang-zh-Hans">这是订阅制吗？</span></summary>
         <div class="answer">
           <p class="lang-ja">いいえ。買い切り一度きりです。更新料も、隠れた追加課金もありません。</p>
           <p class="lang-en">No. It's a single one-time purchase. There are no recurring fees and no hidden charges.</p>
+          <p class="lang-ko">아니요. 한 번만 결제하는 일회성 구입입니다. 갱신 요금이나 숨겨진 추가 요금은 없습니다.</p>
+          <p class="lang-zh-Hans">不是。这是一次性购买。没有续费，也没有隐藏的额外收费。</p>
         </div>
       </details>
       <details>
-        <summary><span class="lang-ja">機種変更／再インストールしました。パックを元に戻すには？</span><span class="lang-en">I reinstalled or changed devices. How do I restore the pack?</span></summary>
+        <summary><span class="lang-ja">機種変更／再インストールしました。パックを元に戻すには？</span><span class="lang-en">I reinstalled or changed devices. How do I restore the pack?</span><span class="lang-ko">기기 변경 또는 재설치 후 팩을 복원하려면 어떻게 하나요?</span><span class="lang-zh-Hans">我更换设备或重新安装了应用，如何恢复购买？</span></summary>
         <div class="answer">
           <p class="lang-ja">同じApple IDでサインインのうえ、アプリ内の「購入を復元」をお試しください。買い切りパックが追加料金なしで再有効化されます。</p>
           <p class="lang-en">Sign in with the same Apple ID and use “Restore Purchases” in the app. The pack will be re-enabled at no extra charge.</p>
+          <p class="lang-ko">동일한 Apple ID로 로그인한 뒤 앱 안의 "구입 복원"을 사용해 보세요. 일회성 구입 팩이 추가 요금 없이 다시 활성화됩니다.</p>
+          <p class="lang-zh-Hans">请使用同一个 Apple ID 登录，并在应用内使用“恢复购买”。一次性购买包会重新启用，且无需额外付费。</p>
         </div>
       </details>
       <details>
-        <summary><span class="lang-ja">スキャンした書類はどこに保存されますか？</span><span class="lang-en">Where are my scanned documents stored?</span></summary>
+        <summary><span class="lang-ja">スキャンした書類はどこに保存されますか？</span><span class="lang-en">Where are my scanned documents stored?</span><span class="lang-ko">스캔한 문서는 어디에 저장되나요?</span><span class="lang-zh-Hans">扫描的文档保存在哪里？</span></summary>
         <div class="answer">
           <p class="lang-ja">すべて端末内にのみ保存されます。撮影画像・OCR結果・検索インデックスを含め、外部に送信されることはありません。</p>
           <p class="lang-en">Everything is stored only on your device. Nothing — including images, OCR results, and the search index — is ever sent anywhere.</p>
+          <p class="lang-ko">모든 문서는 기기 내에만 저장됩니다. 이미지, OCR 결과, 검색 인덱스를 포함해 어떤 데이터도 외부로 전송되지 않습니다.</p>
+          <p class="lang-zh-Hans">所有内容只保存在您的设备上。包括图像、OCR 结果和搜索索引在内的任何内容都不会发送到外部。</p>
         </div>
       </details>
     </div>
@@ -108,24 +134,26 @@
     <h2>
       <span class="lang-ja">動作環境</span>
       <span class="lang-en">Requirements</span>
+      <span class="lang-ko">동작 환경</span>
+      <span class="lang-zh-Hans">系统要求</span>
     </h2>
     <div class="card">
       <table class="meta">
         <tr>
-          <th><span class="lang-ja">対応OS</span><span class="lang-en">OS</span></th>
+          <th><span class="lang-ja">対応OS</span><span class="lang-en">OS</span><span class="lang-ko">지원 OS</span><span class="lang-zh-Hans">支持的系统</span></th>
           <td>iOS 17.2+</td>
         </tr>
         <tr>
-          <th><span class="lang-ja">対応端末</span><span class="lang-en">Devices</span></th>
-          <td><span class="lang-ja">iPhone</span><span class="lang-en">iPhone</span></td>
+          <th><span class="lang-ja">対応端末</span><span class="lang-en">Devices</span><span class="lang-ko">지원 기기</span><span class="lang-zh-Hans">支持的设备</span></th>
+          <td><span class="lang-ja">iPhone</span><span class="lang-en">iPhone</span><span class="lang-ko">iPhone</span><span class="lang-zh-Hans">iPhone</span></td>
         </tr>
         <tr>
-          <th><span class="lang-ja">言語</span><span class="lang-en">Languages</span></th>
-          <td><span class="lang-ja">日本語 / 英語 / 韓国語 / 簡体字中国語</span><span class="lang-en">Japanese / English / Korean / Simplified Chinese</span></td>
+          <th><span class="lang-ja">言語</span><span class="lang-en">Languages</span><span class="lang-ko">언어</span><span class="lang-zh-Hans">语言</span></th>
+          <td><span class="lang-ja">日本語 / 英語 / 韓国語 / 簡体字中国語</span><span class="lang-en">Japanese / English / Korean / Simplified Chinese</span><span class="lang-ko">일본어 / 영어 / 한국어 / 중국어 간체</span><span class="lang-zh-Hans">日语 / 英语 / 韩语 / 简体中文</span></td>
         </tr>
         <tr>
-          <th><span class="lang-ja">価格</span><span class="lang-en">Price</span></th>
-          <td><span class="lang-ja">無料（OCR＆全文検索パックは買い切り ¥600）</span><span class="lang-en">Free (OCR &amp; Full-Text Search Pack: one-time ¥600)</span></td>
+          <th><span class="lang-ja">価格</span><span class="lang-en">Price</span><span class="lang-ko">가격</span><span class="lang-zh-Hans">价格</span></th>
+          <td><span class="lang-ja">無料（OCR＆全文検索パックは買い切り ¥600）</span><span class="lang-en">Free (OCR &amp; Full-Text Search Pack: one-time ¥600)</span><span class="lang-ko">무료(OCR 및 전체 텍스트 검색 팩은 일회성 구입 ¥600)</span><span class="lang-zh-Hans">免费（OCR 与全文搜索包为一次性购买 ¥600）</span></td>
         </tr>
       </table>
     </div>
@@ -133,22 +161,28 @@
     <h2>
       <span class="lang-ja">お問い合わせ</span>
       <span class="lang-en">Contact</span>
+      <span class="lang-ko">문의</span>
+      <span class="lang-zh-Hans">联系方式</span>
     </h2>
     <div class="contact-box">
       <p class="lang-ja">ご質問・ご不明な点は、以下のメールアドレスまでお気軽にご連絡ください。</p>
       <p class="lang-en">For any questions, please feel free to reach out by email.</p>
+      <p class="lang-ko">질문이나 궁금한 점이 있으면 아래 이메일 주소로 편하게 연락해 주세요.</p>
+      <p class="lang-zh-Hans">如有任何问题，请随时通过以下电子邮件地址联系我们。</p>
       <a class="mail" href="mailto:ykapp.dev0123@gmail.com?subject=Zero%20Scanner%20Support">ykapp.dev0123@gmail.com</a>
       <p class="note">
         <span class="lang-ja">端末とiOSのバージョンを添えていただくとスムーズです。</span>
         <span class="lang-en">Including your device and iOS version helps us respond faster.</span>
+        <span class="lang-ko">기기와 iOS 버전을 함께 알려 주시면 더 원활하게 답변드릴 수 있습니다.</span>
+        <span class="lang-zh-Hans">请附上您的设备型号和 iOS 版本，以便我们更快回复。</span>
       </p>
     </div>
   </main>
 
   <footer>
     <div class="links">
-      <a href="index.html"><span class="lang-ja">ホーム</span><span class="lang-en">Home</span></a>
-      <a href="privacy.html"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy Policy</span></a>
+      <a href="index.html"><span class="lang-ja">ホーム</span><span class="lang-en">Home</span><span class="lang-ko">홈</span><span class="lang-zh-Hans">首页</span></a>
+      <a href="privacy.html"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy Policy</span><span class="lang-ko">개인정보 처리방침</span><span class="lang-zh-Hans">隐私政策</span></a>
     </div>
     <p>© 2026</p>
   </footer>
